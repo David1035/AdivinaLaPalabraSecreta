@@ -1,18 +1,10 @@
-/*let mensaje 
+let expr = 'Manzanas'
 
-const edad = 10; 
-
-if (edad >= 18) {
-    mensaje = "Eres mayor de edad";
-} else {
-    mensaje = "Eres menor de edad";
+switch(expr) {
+    case 'Naranjas':
+        console.log('Son iguales y tienen precio diferente');
+        break
+    case 'Manzanas':
+        console.log('el precio es $ pesos por $manzana')
+        break
 }
-
-console.log(mensaje)*/
-
-//condicción ? true : false; 
-
-const edad = 20; 
-
-const mensaje = edad >= 18 ? 'puede pasar, es mayor de edad' : 'No puede pasar, es menor'
-console.log(mensaje)
