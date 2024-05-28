@@ -1,10 +1,9 @@
-let expr = 'Manzanas'
+let textContactenado = ''; 
 
-switch(expr) {
-    case 'Naranjas':
-        console.log('Son iguales y tienen precio diferente');
-        break
-    case 'Manzanas':
-        console.log('el precio es $ pesos por $manzana')
-        break
+let nombres = ["Alice", "Bob", "Charlie", "David"];
+
+for(let i = 0; i < nombres.length; i++) {
+    textContactenado += nombres[i] + ', '
 }
+
+console.log(textContactenado)
