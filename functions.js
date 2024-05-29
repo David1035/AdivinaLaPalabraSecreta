@@ -1,12 +1,11 @@
-let textContactenado = ''; 
+/*
+array.forEach( (item) => {
+    código a ejecutar
+})
+*/
 
-let nombres = ["Alice", "Bob", "Charlie", "David"];
+let list = ['eat', 'sleep', 'code', 'repeat']
 
-for(let i = 0; i < nombres.length; i++) {
-    textContactenado += nombres[i]
-    if(i < nombres.length - 1) {
-        textContactenado += ', '
-    }
-}
-
-console.log(textContactenado)
+list.forEach((item) => {
+    console.log(item)
+})
