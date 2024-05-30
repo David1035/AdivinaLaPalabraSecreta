@@ -1,4 +1,3 @@
-//ejercicio
 const calificaciones = {
     Alice: 85,
     Bob: 92,
@@ -13,10 +12,16 @@ let mejorEstudiante = "";
 
 // Iterar sobre el objeto calificaciones usando for...in
 for (let estudiante in calificaciones) {
-    // Sumar cada calificación a sumaCalificaciones
-    // Contar el número de estudiantes
-    // Determinar la calificación más alta y el estudiante correspondiente
+    sumaCalificaciones += calificaciones[estudiante];
+    numeroEstudiantes += 1;
+    if (calificaciones[estudiante] > calificacionMaxima) {
+        calificacionMaxima = calificaciones[estudiante];
+        mejorEstudiante = estudiante;
+    }
 }
 
 // Calcular la calificación promedio
+let calificacionPromedio = sumaCalificaciones / numeroEstudiantes;
+
 // Imprimir el estudiante con la calificación más alta y la calificación promedio
+console.log(`El mejor estudiante es ${mejorEstudiante} y tiene una calificación de ${calificacionMaxima}, siendo la calificación más alta. La nota promedio de los estudiantes es ${calificacionPromedio}.`);
