@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <script src="functions.js"></script>
+    <script src="Js/adivinaPalabraSecreta.js"></script>
     <div class="grid-container">
         <header class="header">Header</header>
         <nav class="nav">
             <p>Navigation</p>
             <div class="navbar">
-                <p>Navigation2</p>
+                <input type="text" id="inputUser"   >
+                <button id="button"  onclick="checkWord()">divinar</button>
+                <p id="result"></p>
+                <button id="resetButton" onclick="resetGame()">Reiniciar</button>
             </div>
         </nav>
         <aside class="left-sidebar">Left Sidebar</aside>
