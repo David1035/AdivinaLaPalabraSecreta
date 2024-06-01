@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <script src="Js/adivinaPalabraSecreta.js"></script>
     <div class="grid-container">
         <header class="header">Header</header>
         <nav class="nav">
             <p>Navigation</p>
             <div class="navbar">
+                <h1>Adivina la palabra secreta</h1>
+                <p>Si te apaciona la programación y te gustan los datos, será sencillo para ti, lo más importante es que la palabra correspnode al nombre de un lenguaje de programación</p>
                 <input type="text" id="inputUser"   >
-                <button id="button"  onclick="checkWord()">divinar</button>
+                <button class="style-buttom" id="button"  onclick="checkWord()">divinar</button>
                 <p id="result"></p>
-                <button id="resetButton" onclick="resetGame()">Reiniciar</button>
+                <button class="style-buttom" id="resetButton" onclick="resetGame()">Reiniciar</button>
             </div>
         </nav>
         <aside class="left-sidebar">Left Sidebar</aside>
@@ -24,5 +25,6 @@
         <aside class="right-sidebar">Right Sidebar</aside>
         <footer class="footer">Footer</footer>
     </div>
+    <script src="Js/adivinaPalabraSecreta.js"></script>
 </body>
 </html>

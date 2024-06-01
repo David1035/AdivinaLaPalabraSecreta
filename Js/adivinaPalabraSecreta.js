@@ -12,10 +12,10 @@ Requerimientos:
 */
 
 let contador = 0;
-let palabraOculta = 'PHP';
+let palabraOculta = 'PYTHON';
 
 function checkWord() {
-    let usuarioPalabra = document.getElementById('inputUser').value;
+    let usuarioPalabra = document.getElementById('inputUser').value.toUpperCase();
     contador++;
 
     if (usuarioPalabra === palabraOculta) {
@@ -41,3 +41,10 @@ function resetGame() {
     document.getElementById('button').disabled = false;
     document.getElementById('result').innerText = '';
 }
+
+
+document.getElementById('inputUser').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        checkWord();
+    }
+})
