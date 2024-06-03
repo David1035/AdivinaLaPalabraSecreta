@@ -1,9 +1,7 @@
-// en este programa puedes verificar si está dentro de los ganadores de una rifa, ingresando el nombre o número de ticket. 
 
-const winningParticipants = [
-    { id: 8, name: 'Juan', ticket: 8 },
-    { id: 15, name: 'Pedro', ticket: 15 },
-    { id: 21, name: 'Maria', ticket: 21 },
-]
+const nombres1 = ['Alice', 'Bob', 'Charlie'];
+const nombres2 = ['David', 'Eve', 'Frank'];
+const nombres3 = ['luis', 'luisa', 'julio']
+const nombresJuntos = nombres1.concat(nombres2).concat(nombres3)
 
-
+console.log(nombresJuntos)
