@@ -1,7 +1,11 @@
+const arrayDeCadenas = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
 
-const nombres1 = ['Alice', 'Bob', 'Charlie'];
-const nombres2 = ['David', 'Eve', 'Frank'];
-const nombres3 = ['luis', 'luisa', 'julio']
-const nombresJuntos = nombres1.concat(nombres2).concat(nombres3)
+function verificarCadenaEnArray(i){
+    if(arrayDeCadenas.some(j => j === i) === true){
+        console.log(arrayDeCadenas.indexOf(i) + ', ' + arrayDeCadenas.lastIndexOf(i)) 
+    } else {
+        console.log(arrayDeCadenas.indexOf(i))
+    }
+}
 
-console.log(nombresJuntos)
+verificarCadenaEnArray('apple') // 0, 5
