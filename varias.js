@@ -1,11 +1,17 @@
-const arrayDeCadenas = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
-
-function verificarCadenaEnArray(i){
-    if(arrayDeCadenas.some(j => j === i) === true){
-        console.log(arrayDeCadenas.indexOf(i) + ', ' + arrayDeCadenas.lastIndexOf(i)) 
-    } else {
-        console.log(arrayDeCadenas.indexOf(i))
+//Ejercise
+function tournnamentWinner (competitions, result){
+    for(let i = 0; i < competitions.length; i++){
+        const [home, away] = competitions[i];
+        const winningTeam = result[i] === 0 ? away : home
     }
 }
 
-verificarCadenaEnArray('apple') // 0, 5
+const competitions = [
+    ['JavaScript', 'C#'],
+    ['C#', 'Python'],
+    ['Python', 'JavasScript']
+]
+
+const result = [0,0,1]
+
+console.log(tournnamentWinner (competitions, result))
