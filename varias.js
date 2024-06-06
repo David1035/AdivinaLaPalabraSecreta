@@ -1,28 +1,20 @@
-//Ejercise
-function tournnamentWinner (competitions, result){
-    const scores = {};
-    let winner = '';
 
-    for(let i = 0; i < competitions.length; i++){
-        const [home, away] = competitions[i];
-        const winningTeam = result[i] === 0 ? away : home
 
-        scores[winningTeam] = (scores[winningTeam] || 0) + 3
+/*const person = {
+    name: 'David',
+    lastName: 'Hernandez',
+    age: 30,
+}*/
 
-        if(!winner || scores[winningTeam] > scores[winner]){
-            winner = winningTeam
-        }
-
-    }
-    return winner
+// función constructora, se inicia con mayúscula
+function Person(name,  lastName, age){
+    this.name = name;
+    this.lastName = lastName;
+    this.age = age;
 }
 
-const competitions = [
-    ['JavaScript', 'C#'],
-    ['C#', 'Python'],
-    ['Python', 'JavasScript']
-]
+//Instancias que vengan de un objeto 
+const person1 = new Person('David', 'Hernandez', 30)
+const person2 = new Person('David', 'Hernandez', 30)
 
-const result = [1,0,0]
 
-console.log(tournnamentWinner (competitions, result))
